@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once './functions/mysql.php';
 
 function getAllProducts() {
@@ -35,4 +36,41 @@ function getProductsByName($name){
     $query->execute();
 
     return $query;
+}
+
+function order($productId, $name, $image, $price, $quantity) {
+    if(isset($_SESSION['cart'])){
+        $cart = $_SESSION['cart'];
+    }else{
+        $cart = array();
+    }
+    
+    $product = array(
+        'productId' => $productId,
+        'name' => $name,
+        'image' => $image,
+        'price' => $price,
+        'quantity' => $quantity,
+    );
+
+    $cart[] = $product;
+    $_SESSION['cart'] = $cart;
+}
+
+function getOrdersBySession() {
+    if(isset($_SESSION['cart'])){
+        $cart = $_SESSION['cart'];
+    }else{
+        $cart = array();
+    }
+
+    return $cart;
+
+
+}
+
+// Redirect page
+function redirect($url) {
+    header("Location: $url");
+    die();
 }
