@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once './functions/mysql.php';
+include_once 'mysql.php';
 
 function getAllProducts() {
     $sql = "select * from products";
