@@ -18,3 +18,12 @@ function getProduct($id) {
 
     return $stmt->fetch();
 }
+
+function getProductsByCategory($categoryId){
+    $sql = "select * from products where categories=$categoryId";
+    global $pdo;
+    $query = $pdo->prepare($sql);
+    $query->execute();
+
+    return $query;
+}
