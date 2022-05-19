@@ -1,3 +1,4 @@
+<?php include_once './functions/db.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,7 +79,6 @@
 						<div class="san-pham">
 							<!-- Vung du lieu -->
 							<?php
-								include_once './functions/db.php';
 								if(!isset($_GET['id'])) die();
 
 								$categoryId = $_GET['id'];

@@ -1,3 +1,4 @@
+<?php include_once './functions/db.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,9 +18,8 @@
 	<?php include_once './inc/header.php'; ?>
 
   <?php
-  require_once './functions/db.php';
   if(!isset($_GET['id'])) die();
-  
+
   $id = $_GET['id'];
   $product = getProduct($id);
   ?>

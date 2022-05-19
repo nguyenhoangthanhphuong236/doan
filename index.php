@@ -87,7 +87,7 @@
 										<div class="ten-item-column">
 											<a href="single.php?id=<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a>
 										</div>
-										<p class="gia"><?php echo $row['price']; ?>đ</p>
+										<p class="gia"><?php echo number_format($row['price']); ?>đ</p>
 										<a class="btn btn-default" href="order.php?id=<?php echo $row['id']; ?>">Đặt hàng</a>
 									</div>
 								</div>		
