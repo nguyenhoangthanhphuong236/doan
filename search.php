@@ -1,3 +1,4 @@
+<?php include_once './functions/db.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +19,6 @@
 
 <body onload="autoloading()">
 	<!-- Section header -->
-	<?php include_once './inc/header.php'; ?>
 
 	<script src="JS/load.js"></script>
 	<div class="anh-nen">
