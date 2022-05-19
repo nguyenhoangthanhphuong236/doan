@@ -27,3 +27,12 @@ function getProductsByCategory($categoryId){
 
     return $query;
 }
+
+function getProductsByName($name){
+    $sql = "select * from products where name like '%" . $name ."%'";
+    global $pdo;
+    $query = $pdo->prepare($sql);
+    $query->execute();
+
+    return $query;
+}
