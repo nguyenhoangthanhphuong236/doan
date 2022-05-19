@@ -70,100 +70,29 @@
 							</div>
 						</div>
 					</div>	
+					
 					<div class="col-md-9">
 						<div class="ten-bang">
 						<h1 style="border-bottom: 3px rgb(212, 109, 12) solid;" class="sp"><marquee behavior="alternate">SẢN PHẨM HOT NHẤT TUẦN</marquee></h1>
 						</div>
 						<div class="san-pham">
-							<div class="column">
-								<div class="item-column">
-									<img class="image" src="https://admin.zibi.vn/upload/images/320x320/2021/05/26/26-05-2021-0-1622018125-0.60ae084d2f24f.60ae084d2f252.jpg" / width="85%" height="150px">
-									<div class="ten-item-column">
-										<a href="#"> Áo croptop</a>
+							<!-- Vung du lieu -->
+							<?php
+								include_once './functions/db.php';
+								$products = getAllProducts();
+								foreach($products as $row) { ?>
+								<div class="column">
+									<div class="item-column">
+										<img class="image" src="<?php echo $row['image']; ?>" / width="85%" height="150px">
+										<div class="ten-item-column">
+											<a href="#"><?php echo $row['name']; ?></a>
+										</div>
+										<p class="gia"><?php echo $row['price']; ?>đ</p>
+										<button class="btn btn-default add-to-cart" id="btn-cart">Đặt hàng</button>
 									</div>
-									<p class="gia">450.000 đ</p>
-									<button class="btn btn-default add-to-cart" id="btn-cart">Đặt hàng</button>
-								</div>
-							</div>
-							<div class="column">
-								<div class="item-column">
-									<img class="image" src="https://bosiquanao.net/wp-content/uploads/11978-clean-ec10c4968202795c2013.jpg" / width="85%" height="150px">
-									<div class="ten-item-column">
-										<a href="#">Áo thun</a>
-									</div>
-									<p class="gia">200.000 đ</p>
-									<button class="btn btn-default add-to-cart" id="btn-cart">Đặt hàng</button>
-
-								</div>
-							</div>
-							<div class="column">
-								<div class="item-column">
-									<img class="image" src="https://cdn.muabannhanh.com/asset/frontend/img/gallery/2020/06/25/5ef4b58d2cbbe_1593095565.jpg" / width="100%" height="150px">
-									<div class="ten-item-column">
-										<a href="#">Áo kiểu</a>
-									</div>
-									<p class="gia">350.000 đ</p>
-									<button class="btn btn-default add-to-cart">Đặt hàng</button>
-
-								</div>
-							</div>
-							<div class="column">
-								<div class="item-column">
-									<img class="image" src="https://cf.shopee.vn/file/c758cf377b7b9ffbb4c1cac8dfaea402" / width="85%" height="150px">
-									<div class="ten-item-column">
-										<a href="#">Áo hoodie</a>
-									</div>
-									<p class="gia">410.000 đ</p>
-									<button class="btn btn-default add-to-cart">Đặt hàng</button>
-
-								</div>
-							</div>
-						</div>
-
-						<div class="san-pham">
-							<div class="column">
-								<div class="item-column">
-									<img class="image" src="https://vn-test-11.slatic.net/p/6bea33389dc558a268b0ec6e3af9ecca.jpg_720x720q80.jpg_.webp" / width="85%" height="150px">
-									<div class="ten-item-column">
-										<a href="#">Quần ống rộng</a>
-									</div>
-									<p class="gia">450.000 đ</p>
-									<button class="btn btn-default add-to-cart">Đặt hàng</button>
-								</div>
-							</div>
-							<div class="column">
-								<div class="item-column">
-									<img class="image" src="https://salt.tikicdn.com/ts/tmp/8f/cb/31/3bd07a9c9b184d583d3bf0ca74418c98.jpg" / width="85%" height="150px">
-									<div class="ten-item-column">
-										<a href="#">Quần legging</a>
-									</div>
-									<p class="gia">500.000 đ</p>
-									<button class="btn btn-default add-to-cart">Đặt hàng</button>
-
-								</div>
-							</div>
-							<div class="column">
-								<div class="item-column">
-									<img class="image" src="https://vn-test-11.slatic.net/p/67dd7ffeed0fadaca62ca98c1d7702f7.jpg_720x720q80.jpg_.webp" / width="85%" height="150px">
-									<div class="ten-item-column">
-										<a href="#">Quần short</a>
-									</div>
-									<p class="gia">440.500 đ</p>
-									<button class="btn btn-default add-to-cart">Đặt hàng</button>
-
-								</div>
-							</div>
-							<div class="column">
-								<div class="item-column">
-									<img class="image" src="https://cf.shopee.vn/file/48a2d492b10d5acb4cda7e8fa1991c09" / width="85%" height="150px">
-									<div class="ten-item-column">
-										<a href="#">Quần jogger nữ</a>
-									</div>
-									<p class="gia">459.000 đ</p>
-									<button class="btn btn-default add-to-cart">Đặt hàng</button>
-
-								</div>
-							</div>
+								</div>		
+							<?php	} ?>
+							
 						</div>
 					</div>
 				</div><!--end row-->
