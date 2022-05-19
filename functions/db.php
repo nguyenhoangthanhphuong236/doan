@@ -9,3 +9,12 @@ function getAllProducts() {
 
     return $query;
 }
+
+function getProduct($id) {
+    $sql = "select * from products where id=? LIMIT 1";
+    global $pdo;
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([$id]);
+
+    return $stmt->fetch();
+}

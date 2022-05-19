@@ -16,17 +16,24 @@
   <!-- Section header -->
 	<?php include_once './inc/header.php'; ?>
 
+  <?php
+  require_once './functions/db.php';
+  if(!isset($_GET['id'])) die();
+  
+  $id = $_GET['id'];
+  $product = getProduct($id);
+  ?>
   <div class="container-fluid">
     <div class="row" style="margin-top: 10px;">
       <div class="col-md-5 offset-md-1">
-        <img id="h1" src="https://xuongmaydongphucgiare.com/wp-content/uploads/2020/08/4.png" width="100%">
+        <img id="h1" src="<?php echo $product['image']; ?>" width="100%">
       </div>
       <div class="col-md-5 offset-md-1">
-        <h1>Áo sơ mi nữ</h1>
+        <h1><?php echo $product['name']; ?></h1>
         <p>Mã sản phẩm: <span class="btn" style="background: #CCCCCC">7512</span></p>
 
         <span class="special-price">
-          <span class="price product-price">399.000đ</span>
+          <span class="price product-price"><?php echo $product['price']; ?>đ</span>
         </span>
 
         <span class="old-price">

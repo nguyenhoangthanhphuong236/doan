@@ -85,7 +85,7 @@
 									<div class="item-column">
 										<img class="image" src="<?php echo $row['image']; ?>" / width="85%" height="150px">
 										<div class="ten-item-column">
-											<a href="#"><?php echo $row['name']; ?></a>
+											<a href="single.php?id=<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a>
 										</div>
 										<p class="gia"><?php echo $row['price']; ?>đ</p>
 										<button class="btn btn-default add-to-cart" id="btn-cart">Đặt hàng</button>
