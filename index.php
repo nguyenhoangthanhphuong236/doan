@@ -1,3 +1,4 @@
+<?php include_once './functions/db.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,7 +79,6 @@
 						<div class="san-pham">
 							<!-- Vung du lieu -->
 							<?php
-								include_once './functions/db.php';
 								$products = getAllProducts();
 								foreach($products as $row) { ?>
 								<div class="column">
@@ -88,7 +88,7 @@
 											<a href="single.php?id=<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a>
 										</div>
 										<p class="gia"><?php echo $row['price']; ?>đ</p>
-										<button class="btn btn-default add-to-cart" id="btn-cart">Đặt hàng</button>
+										<a class="btn btn-default" href="order.php?id=<?php echo $row['id']; ?>">Đặt hàng</a>
 									</div>
 								</div>		
 							<?php	} ?>
