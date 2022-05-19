@@ -25,9 +25,10 @@ html,body{
     }
     .thanhheader {
       background: #CCCCCC;
+      padding-top: 2px;
     }
     .thanhmenu {
-      margin-top: 70px;
+      margin-top: 50px;
     }
     
     .row1 {
@@ -93,7 +94,6 @@ html,body{
         margin-right: 15px;
       }
     .bao-bang{
-      
         margin-top: 5px;
         margin: 0 auto;
       }
@@ -101,6 +101,7 @@ html,body{
         text-align: center;
         background: rgb(54, 12, 12);
         color: white;
+        width: 99%;
     } 
     .column {
         width: 25%;
@@ -549,4 +550,12 @@ html,body{
     h4 {
       color: red;
     }
-    
+    .chinhsua {
+        width: 100px; height: 100px;
+    }
+    .chinhchu {
+        margin-top: 10px;
+    }
+    .container{
+        margin-top: 10px;
+    }

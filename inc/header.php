@@ -1,18 +1,18 @@
 <div class="container-fluid">
-    <div class="row p-2 text-center thanhheader">
-        <div class="col-md-2 hotline">
-            <p><strong>Hotline:</strong> 0768495661</p>
+    <div class="row text-center thanhheader">
+        <div class="col-md-2 hotline" style="margin-top: 7px;">
+            <p style=" font-size:22px;"><strong>Hotline:</strong> 0768495661</p>
         </div>
-        <div class="col-md-2 icon">
+        <div class="col-md-2 icon" style="margin-top: 12px;">
             <span><i class="fab fa-facebook-square"></i></span>
             <span><i class="fab fa-google-plus-square"></i></span>
             <span><i class="fab fa-twitter-square"></i></span>
         </div>
-        <div class="col-md-4 offset-md-2 dk">
-            <button type="button" class="btn" style="margin-right: 40px; margin-left: 160px"><a href="dn.html" style="text-decoration: none;">Đăng nhập</a></button>
-            <button type="button" class="btn"><a href="dk.html" style="text-decoration: none;">Đăng ký</a></button>
+        <div class="col-md-4 offset-md-2 dk" style="margin-top: 8px;">
+            <button type="button" class="btn" style="margin-right: 30px; margin-left: 160px; width: 140px"><a href="dn.html" style="text-decoration: none; font-size:15px">Đăng nhập</a></button>
+            <button type="button" class="btn" style="margin-left: 10px; width: 120px"><a href="dk.html" style="text-decoration: none; font-size:15px">Đăng ký</a></button>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2" style="margin-top: 8px;">
             <div class="btn-user">
                 <div class="btn-cart1" onclick="show()">
                     <img id="icons-cart" src="./public/images/cart.png" alt="">
@@ -34,7 +34,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="TrangChu.html">
-            <img src="./public/images/logocanhan.jpg" style="width: 80px">
+            <img src="./public/images/logocanhan.jpg" style="width: 60px">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

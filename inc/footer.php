@@ -1,5 +1,5 @@
 <div class="container-fluid footer">
-    <div class="row p-5">
+    <div class="row p-3">
         <div class="col-md-3 text-center footer-header">
             <img src="./public/images/logocanhan.jpg" style="width: 150px">
             <h5 class="text-shadow">
@@ -33,6 +33,9 @@
                 <tr>
                     <td><i class="fas fa-envelope" style="margin-right: 10px"></i>hangianiok02@gmail.com</td>
                 </tr>
+                <tr>
+                    <td><i class="fa fa-facebook-square" aria-hidden="true" style="margin-right: 10px"></i>Face: Shop HN22</td>
+                </tr>
             </table>
         </div>
         <div class="col-md-3 text-center">
@@ -47,6 +50,9 @@
                 </tr>
                 <tr>
                     <td>Thanh toán và được kiểm tra hàng ngay khi nhận hàng</td>
+                </tr>
+                <tr>
+                    <td>Giá cả phù hợp với mọi người</td>
                 </tr>
             </table>
         </div>
