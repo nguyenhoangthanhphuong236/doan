@@ -10,6 +10,14 @@ function getAllProducts() {
 
     return $query;
 }
+function getAllProducts1() {
+    $sql = "select * from products1";
+    global $pdo;
+    $query = $pdo->prepare($sql);
+    $query->execute();
+
+    return $query;
+}
 
 function getProduct($id) {
     $sql = "select * from products where id=? LIMIT 1";

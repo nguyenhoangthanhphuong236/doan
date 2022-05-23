@@ -8,11 +8,11 @@
             <span><i class="fab fa-google-plus-square"></i></span>
             <span><i class="fab fa-twitter-square"></i></span>
         </div>
-        <div class="col-md-4 offset-md-2 dk" style="margin-top: 8px;">
+        <div class="col-md-6 offset-md-2 dk" style="margin-top: 5px;">
             <button type="button" class="btn" style="margin-right: 30px; margin-left: 160px; width: 140px"><a href="dn.html" style="text-decoration: none; font-size:15px">Đăng nhập</a></button>
             <button type="button" class="btn" style="margin-left: 10px; width: 120px"><a href="dk.html" style="text-decoration: none; font-size:15px">Đăng ký</a></button>
         </div>
-        <div class="col-md-2" style="margin-top: 8px;">
+        <!--<div class="col-md-2" style="margin-top: 8px;">
             <div class="btn-user">
                 <div class="btn-cart1" onclick="show()">
                     <img id="icons-cart" src="./public/images/cart.png" alt="">
@@ -25,7 +25,7 @@
                     <span class="cart-total-price">0đ</span>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
     <!--end row-->
 </div>
@@ -83,7 +83,7 @@
                 </li>
             </ul>
             <form class="d-flex">
-                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Tìm kiếm" title="Type in a name">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Tìm kiếm" title="Type in a name" style="width: 400px">
                 <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
             </form>
         </div>

@@ -33,7 +33,7 @@
         <p>Mã sản phẩm: <span class="btn" style="background: #CCCCCC">7512</span></p>
 
         <span class="special-price">
-          <span class="price product-price"><?php echo $product['price']; ?>đ</span>
+          <span class="price product-price"><?php echo number_format($product['price'],3,"."," "); ?>đ</span>
         </span>
 
         <span class="old-price">
@@ -81,18 +81,18 @@
             </form>
           </div>
           <div class="col-md-6" style="margin-top: 45px">
-            <p class="text-center btn btn-light"> <a href="muangay.html"><i class="fa fa-shopping-cart"></i> Mua ngay </a> </p> 
+          <a class="btn btn-default" href="order.php?id=<?php echo $row['id']; ?>">Đặt hàng</a> 
           </div>  
         </div>  
         <div class="row" style="margin-top: 30px">
           <div class="col-md-4">
-            <img onclick="a1()" src="./public/images/somi.jpg" width="100%">
+            <img onclick="a1()" src="./public/images/croptop1.jpg" width="100%">
           </div>
           <div class="col-md-4">
-            <img onclick="a2()" src="./public/images/somi1.jpg" width="100%">
+            <img onclick="a2()" src="./public/images/croptop2.jpg" width="100%">
           </div>
           <div class="col-md-4">
-            <img onclick="a3()" src="./public/images/somi2.jpg" width="100%">
+            <img onclick="a3()" src="./public/images/croptop3.jpg" width="100%">
           </div>
         </div>
       </div><!--end col-md-6-->
@@ -100,15 +100,15 @@
 
     <div class="row" style="margin-top: 40px">
       <div class="col-md-7 offset-md-1">
-        <p class="text-uppercase">Thông tin cơ bản</p><hr>
+        <p class="text-uppercase" style="font-size: 20px;"><strong>Thông tin cơ bản</strong></p><hr>
         <p style="background: #CCCCCC; height: 40px; padding: 5px"><strong>Chất vải: </strong>Cotton trơn</p>
-        <p><strong>Chiều dài áo: </strong>Qua rốn</p>
+        <p><strong>Chiều dài áo: </strong>Trên rốn</p>
         <p style="background: #CCCCCC; height: 40px; padding: 5px"><strong>Chiều dài tay áo: </strong>Tay lửng</p>
         <p><strong>Họa tiết: </strong>Trơn</p>
         <p style="background: #CCCCCC; height: 40px; padding: 5px"><strong>Phong cách: </strong>Dễ thương</p>
         <p><strong>Kiểu cổ áo: </strong>Cổ tím</p>
 
-        <p class="text-uppercase">Thông tin chi tiết</p><hr>
+        <p class="text-uppercase" style="font-size: 20px; margin-top: 20px"><strong>Thông tin chi tiết</strong></p><hr>
         <p>HN22 xin kính chào quý khách!</p>
         <p>Xin mời quý khách xem bảng size ở bên dưới nhé</p>
         <abbr>-------------------------------</abbr><br>
@@ -116,7 +116,7 @@
         <p>- Quý khách muốn đặt 2 hoặc nhiều cáimà không cùng màu cùng size .. thì các bạn lần lượt chọn thêm vào giỏ hàng,rồi trở ra lại tiếp tục chọn sản phẩm tiếp theo phân loại hàng (Màu, Size) những áo muốn đặt, sau khi thêm xong vào giỏ hàng sẽ xuất hiện 2 mã hàng được phận loại màu sắc và size ạ . Tiếp theo nhấn MUA NGAY và điền thông tin thanh toán.</p>
 
         <strong>Áo sơ mi nữ công sở:</strong>
-        <p>- Là mẫu Áo sơ mi mới lạ độc đáo nhất trong bộ sưu tập áo sơ mi cách tân,được thiết kế rất tỉ mĩ và tinh tế từ đường may, mũi chỉ và tạo điểm nhấn bởi cách phối màu ở cổ và tay áo. Với chất liệu cotton lụa dày dặn nhưng mềm, mát, không nhăn, phom dáng chuẩn giúp áoáo sơ mivừa vặn thoải mái,và tôn lên nét dễ thương và sự sang trọng của quí khách.</p>
+        <p>- Là mẫu áo đa phong cách, vì phần trên của croptop có thể được thiết kế như áo thun, áo len, áo sơ mi,... Tay áo có thể dài, ngắn, rộng, sát nách,... tuỳ theo sở thích cá nhân của mỗi người. Chiếc áo này mang đến cho các bạn gái sự năng động tự do .</p>
         <p>Sản phẩm thuộc BST vừa ra mắt tại thương hiệu HN22.<br>
           Thiết kế tinh tế đến từng đường may, chất liệu mềm mại.<br>
           Chất liệu sản phẩm cao cấp tôn dáng cực chuẩn.<br>
@@ -159,7 +159,7 @@
             <img src="http://img.ltwebstatic.com/images3_pi/2020/03/30/1585556500fea3c570a8cdd3df14f20815c348872f.webp" class="rounded-circle" width="100%" height="32">
           </div>
           <div class="col-md-2">
-            <img src="https://tangthienlac.vn/uploads/images/products/big/8a54670b27040612f5431e31cf42568f.jpg" class="rounded-circle" width="100%" height="32">
+            <img src="https://vn112.com/wp-content/uploads/2018/01/pxsolidwhiteborderedsvg-15161310048lcp4.png" class="rounded-circle" width="100%" height="32">
           </div>
           <div class="col-md-2">
             <img src="https://media1.nguoiduatin.vn/thumb_x600x600/media/duong-thi-thu-nga/2018/04/09/mau-cam.jpg" class="rounded-circle" width="100%" height="32">
@@ -225,9 +225,9 @@
       </div>
     </div>
     <div class="row" style="margin-top: 20px">
-      <h3 class="text-center text-uppercase">Bảng size</h3>
-      <div class="col-md-6">
-        <img src="https://salt.tikicdn.com/ts/tmp/97/63/d4/150645bb8858a74024ea381c17d08f23.jpg" width="100%" height="550">
+      <h3 class="text-center text-uppercase" style="font-size: 60px;">Bảng size</h3>
+      <div class="col-md-6" style="margin-top: 34px;">
+        <img src="https://www.vfestival.vn/wp-content/uploads/2019/01/size-thoi-trang-hnoss-1.jpg" width="100%" height="680">
       </div>
       <div class="col-md-6">
         <img src="https://salt.tikicdn.com/ts/tmp/0a/3d/30/a204d844d2438eb8e09ed6d006e79ab2.jpg" width="100%">
@@ -269,13 +269,13 @@
 </body>
 <script type="text/javascript">
   function a1(){
-    document.getElementById("h1").src="Image/somi.jpg"
+    document.getElementById("h1").src="./public/images/coptop1.jpg"
   }
   function a2(){
-    document.getElementById("h1").src="Image/somi1.jpg"
+    document.getElementById("h1").src="./public/images/croptop2.jpg"
   }
   function a3(){
-    document.getElementById("h1").src="Image/somi2.jpg"
+    document.getElementById("h1").src="./public/images/croptop3.jpg" 
   }
 </script>
 </html>

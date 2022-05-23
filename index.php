@@ -22,8 +22,8 @@
 	<?php include_once './inc/header.php'; ?>
 
 	<script src="JS/load.js"></script>
-	<div class="anh-nen">
-		<img src="./public/images/nen.jpg" height="400px" width="100%" id="anh-nen-a" >
+	<div class="anh-nen" style="margin-top: 15px ;">
+		<img src="./public/images/nen1.jpg" height="300px" width="100%" id="anh-nen-a" >
 		<div class="tieu-de-anh-nen=nen">
 
 		</div>
@@ -87,7 +87,7 @@
 										<div class="ten-item-column">
 											<a href="single.php?id=<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a>
 										</div>
-										<p class="gia"><?php echo number_format($row['price'],2,","," "); ?>đ</p>
+										<p class="gia"><?php echo number_format($row['price'],3,"."," "); ?>đ</p>
 										<a class="btn btn-default" href="order.php?id=<?php echo $row['id']; ?>">Đặt hàng</a>
 									</div>
 								</div>		
@@ -105,9 +105,9 @@
 					<div class="ten-bang" style="margin-top: 30px">
 						<h1 style="border-bottom: 3px rgb(212, 109, 12) solid;">ƯU ĐÃI ĐẶT BIỆT</h1>
 					</div>
-					<div class="col-md-12 chinhanh" style="margin-top: 5px">
+					<div class="col-md-12 chinhanh" style="margin-top: 10px">
 						<div class="uu-dai">
-							<img src="./public/images/uudai.jpg" height="380px" width="100%" id="uudai-a">
+							<img src="./public/images/uudai.jpg" height="450px" width="100%" id="uudai-a">
 							<div class="uu-dai-anh=uudai">
 
 							</div>	
@@ -120,94 +120,22 @@
 				<h1 class="text-uppercase" style="border-bottom: 3px rgb(212, 109, 12) solid;">Một số sản phẩm ưu tiên</h1>
 			</div>
 			<div class="san-pham">
-				<div class="column">
-					<div class="item-column">
-						<img class="image" src="https://xuongmaydongphucgiare.com/wp-content/uploads/2020/08/4.png" / width="85%" height="300px">
-						<div class="ten-item-column">
-							<a href="#">Áo sơ mi nữ</a>
-						</div>
-						<p class="gia">450.000 đ</p>
-						<button class="btn btn-default"><a href="chitiet.php" style="color: brown">Xem chi tiết</a></button>
-						<button class="btn btn-default add-to-cart" id="btn-cart">Đặt hàng</button>
-					</div>
-				</div>
-				<div class="column">
-					<div class="item-column">
-						<img class="image" src="https://havistore.net/wp-content/uploads/2019/05/ao-2-day-linen-havi-store-hcm-1.jpg" / width="85%" height="300px">
-						<div class="ten-item-column">
-							<a href="#">Áo 2 dây</a>
-						</div>
-						<p class="gia">500.000 đ</p>
-						<button class="btn btn-default">Xem chi tiết</button>
-						<button class="btn btn-default add-to-cart" id="btn-cart">Đặt hàng</button>
-					</div>
-				</div>
-				<div class="column">
-					<div class="item-column">
-						<img class="image" src="https://cf.shopee.vn/file/b656d418475759fa39a8c1908155c297" / width="85%" height="300px">
-						<div class="ten-item-column">
-							<a href="#">Áo voan hoa nữ</a>
-						</div>
-						<p class="gia">250.000 đ</p>
-						<button class="btn btn-default">Xem chi tiết</button>
-						<button class="btn btn-default add-to-cart" id="btn-cart">Đặt hàng</button>
-					</div>
-				</div>
-				<div class="column">
-					<div class="item-column">
-						<img class="image" src="https://neva.vn/upload/img/vay-nhung-3.jpg" / width="85%" height="300px">
-						<div class="ten-item-column">
-							<a href="#">Set đầm mùa đông</a>
-						</div>
-						<p class="gia">45.000 đ</p>
-						<button class="btn btn-default">Xem chi tiết</button>
-						<button class="btn btn-default add-to-cart" id="btn-cart">Đặt hàng</button>
-					</div>
-				</div>
-				<div class="column">
-					<div class="item-column">
-						<img class="image" src="https://vn-test-11.slatic.net/p/58159863591fc5287115155ddfede36c.jpg_720x720q80.jpg_.webp" / width="85%" height="300px">
-						<div class="ten-item-column">
-							<a href="#">Đầm trễ vai</a>
-						</div>
-						<p class="gia">300.000 đ</p>
-						<button class="btn btn-default">Xem chi tiết</button>
-						<button class="btn btn-default add-to-cart" id="btn-cart">Đặt hàng</button>
-					</div>
-				</div>
-				<div class="column">
-					<div class="item-column">
-						<img class="image" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/346/696/articles/img-0504.jpg?v=1554182587267" / width="85%" height="300px"> 
-						<div class="ten-item-column">
-							<a href="#">Đầm maxi</a>
-						</div>
-						<p class="gia">450.000 đ</p>
-						<button class="btn btn-default">Xem chi tiết</button>
-						<button class="btn btn-default add-to-cart" id="btn-cart">Đặt hàng</button>
-					</div>
-				</div>
-				<div class="column">
-					<div class="item-column">
-						<img class="image" src="https://damvaydep.net/./public/images/dam-xoe-du-tiec-mau-den-thiet-ke-lech-vai-sang-trong-72455j.jpg" / width="85%" height="300px">
-						<div class="ten-item-column">
-							<a href="#">Đầm lệch vai</a>
-						</div>
-						<p class="gia">350.000 đ</p>
-						<button class="btn btn-default">Xem chi tiết</button>
-						<button class="btn btn-default add-to-cart" id="btn-cart">Đặt hàng</button>
-					</div>
-				</div>
-				<div class="column">
-					<div class="item-column">
-						<img class="image" src="https://cf.shopee.vn/file/a4c7b957625bdc895d8bfeb5fcfd514b" / width="85%" height="300px">
-						<div class="ten-item-column">
-							<a href="#">Set croptop tay dài</a>
-						</div>
-						<p class="gia">550.000 đ</p>
-						<button class="btn btn-default">Xem chi tiết</button>
-						<button class="btn btn-default add-to-cart" id="btn-cart">Đặt hàng</button>
-					</div>
-				</div>
+				<!--vùng dữ liệu-->
+				<?php
+								$products = getAllProducts1();
+								foreach($products as $row) { ?>
+								<div class="column">
+									<div class="item-column">
+										<img class="image" src="<?php echo $row['image']; ?>" / width="85%" height="150px">
+										<div class="ten-item-column">
+											<a href="single.php?id=<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a>
+										</div>
+										<p class="gia"><?php echo number_format($row['price'],3,"."," "); ?>đ</p>
+										<a class="btn btn-default" href="order.php?id=<?php echo $row['id']; ?>">Đặt hàng</a>
+									</div>
+								</div>		
+							<?php	} ?>
+				
 			</div>
 
 		</div>
@@ -309,6 +237,21 @@
 				i=1;
 			}
 			vimg.src="./public/images/" + "nen" + i + ".jpg";
+		},2000)
+	}
+</script>
+
+<script type="text/javascript">
+	var vimg = document.getElementById("uudai-a");
+	var t;
+	var i = 1;
+	function autoloading(){
+		t = setInterval(function autoloading(){
+			i++;
+			if(i>3){
+				i=1;
+			}
+			vimg.src="./public/images/" + "uudai" + i + ".jpg";
 		},2000)
 	}
 </script>
